@@ -24,6 +24,6 @@ MonoBehaviour:
   - message: '"Okarin!"'
     speaker: Mayuri
     video: {fileID: 0}
-  - message: 
+  - message: Mayuri notices me and runs over.
     speaker: 
     video: {fileID: 0}

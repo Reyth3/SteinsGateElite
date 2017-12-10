@@ -17,6 +17,7 @@ public class ADVController : MonoBehaviour {
 	private TextMeshProUGUI UI_messageText;
 	private TextMeshProUGUI UI_speakerText;
 	private GameObject UI_SpeakerIndicator;
+	private Animator UI_messageTextAnimator;
 	#endregion
 	bool canAdvance;
 	float advanceCooldown;
@@ -40,6 +41,7 @@ public class ADVController : MonoBehaviour {
 	{
 		UI_SpeakerIndicator = GameObject.Find("SpeakerIndicator");
 		UI_messageText = GameObject.Find("MessageText").GetComponent<TextMeshProUGUI>();
+		UI_messageTextAnimator = UI_messageText.gameObject.GetComponent<Animator>();
 		UI_speakerText = GameObject.Find("SpeakerText").GetComponent<TextMeshProUGUI>();
 	}
 
@@ -62,7 +64,8 @@ public class ADVController : MonoBehaviour {
 			return false;
 		
 		canAdvance = false;
-		advanceCooldown = 1f;
+		advanceCooldown = 0.5f;
+		UI_messageTextAnimator.SetTrigger("FadeIn");
 		currentAction++;
 		var action = actions[currentAction];
 		UI_messageText.text = action.message;

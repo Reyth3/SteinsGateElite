@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGElite", "Assembly-CSharp-firstpass.csproj", "{094C7A10-8678-23E1-CC5D-78BCBF3F7B10}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGElite", "Assembly-CSharp.csproj", "{95FD336A-0157-F393-236B-54B9C3E31F53}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGElite", "Assembly-CSharp-Editor.csproj", "{7827573F-A3B3-027A-5A0A-5149D3344168}"
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{094C7A10-8678-23E1-CC5D-78BCBF3F7B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{094C7A10-8678-23E1-CC5D-78BCBF3F7B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{094C7A10-8678-23E1-CC5D-78BCBF3F7B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{094C7A10-8678-23E1-CC5D-78BCBF3F7B10}.Release|Any CPU.Build.0 = Release|Any CPU
 		{95FD336A-0157-F393-236B-54B9C3E31F53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{95FD336A-0157-F393-236B-54B9C3E31F53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95FD336A-0157-F393-236B-54B9C3E31F53}.Release|Any CPU.ActiveCfg = Release|Any CPU
