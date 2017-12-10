@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79de90f6a6f07a04dbe352c59f9f5ee2, type: 3}
+  m_Name: scr_prologue_01
+  m_EditorClassIdentifier: 
+  ScriptActions:
+  - message: I stop running when I get to the main street.
+    speaker: 
+    video: {fileID: 32900000, guid: 859441e82df102e42a7a0c20b3d9cd71, type: 3}
+  - message: My chest is pounding and I have trouble catching my breath.
+    speaker: 
+    video: {fileID: 0}
+  - message: Mayuri quickly runs after me.
+    speaker: 
+    video: {fileID: 32900000, guid: 7473c2967c2cd4a419ab7577a218d921, type: 3}
+  - message: '"Okarin!"'
+    speaker: Mayuri
+    video: {fileID: 0}
+  - message: 
+    speaker: 
+    video: {fileID: 0}
