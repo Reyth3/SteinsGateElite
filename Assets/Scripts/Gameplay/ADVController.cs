@@ -18,11 +18,13 @@ public class ADVController : MonoBehaviour {
 	private TextMeshProUGUI UI_speakerText;
 	private GameObject UI_SpeakerIndicator;
 	private Animator UI_messageTextAnimator;
+	private GameObject UI_PhoneLockedOverlay;
+	private TextMeshProUGUI UI_PinsCountText;
 	#endregion
-	bool canAdvance;
+	public bool canAdvance;
 	float advanceCooldown;
 	// Use this for initialization
-	void Start () {
+	void Start() {
 		Current = this;
 		if(loadedScript == null)
 		{
@@ -35,6 +37,7 @@ public class ADVController : MonoBehaviour {
 		LoadActions();
 		currentAction = -1;
 		Advance();
+		UpdateADVDataUI();
 	}
 	
 	void InitializeUIReferences()
@@ -43,6 +46,8 @@ public class ADVController : MonoBehaviour {
 		UI_messageText = GameObject.Find("MessageText").GetComponent<TextMeshProUGUI>();
 		UI_messageTextAnimator = UI_messageText.gameObject.GetComponent<Animator>();
 		UI_speakerText = GameObject.Find("SpeakerText").GetComponent<TextMeshProUGUI>();
+		UI_PhoneLockedOverlay = GameObject.Find("Locked");
+		UI_PinsCountText = GameObject.Find("LabMemPinIcon").GetComponentInChildren<TextMeshProUGUI>();
 	}
 
 	void LoadActions()
@@ -51,14 +56,9 @@ public class ADVController : MonoBehaviour {
 		this.actions = actions;
 	}
 
-	void InitializeVideoPlayback()
-	{
-		
-	}
-
 	public bool Advance()
 	{
-		if(!canAdvance)
+		if(!canAdvance || PopupManager.Current.CurrentFullScreenPopup != null)
 			return false;
 		if(currentAction == actions.Count -1)
 			return false;
@@ -75,7 +75,19 @@ public class ADVController : MonoBehaviour {
 		else UI_SpeakerIndicator.SetActive(true);
 		if(action.video != null)
 			VideoController.Current.SetAction(action);
+		if(action.isPhoneUsed)
+			PhoneTriggerCheck();
 		return true;
+	}
+
+	void PhoneTriggerCheck()
+	{
+		if(GameManager.Current.phoneUnlocked)
+			return;
+		VideoController.Current.Pause();
+		PopupManager.Current.ShowPurchasePopup("Unlock Phone?", "You need to unlock your phone to continue. Proceed?", 10, () => {
+			GameManager.Current.UnlockPhone(true);
+		});
 	}
 
 	void Update () {
@@ -88,5 +100,12 @@ public class ADVController : MonoBehaviour {
 		if(Input.GetButtonDown("Fire1") || Input.GetButtonDown("Jump") || Input.GetButtonDown("Submit"))
 			Advance();
 		
+	}
+
+	public void UpdateADVDataUI() 
+	{
+		var _ref = GameManager.Current;
+		UI_PinsCountText.text = _ref.Pins.ToString();
+		UI_PhoneLockedOverlay.SetActive(!_ref.phoneUnlocked);
 	}
 }

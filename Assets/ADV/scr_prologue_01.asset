@@ -15,15 +15,113 @@ MonoBehaviour:
   - message: I stop running when I get to the main street.
     speaker: 
     video: {fileID: 32900000, guid: 859441e82df102e42a7a0c20b3d9cd71, type: 3}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
   - message: My chest is pounding and I have trouble catching my breath.
     speaker: 
     video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
   - message: Mayuri quickly runs after me.
     speaker: 
     video: {fileID: 32900000, guid: 7473c2967c2cd4a419ab7577a218d921, type: 3}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
   - message: '"Okarin!"'
     speaker: Mayuri
     video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
   - message: Mayuri notices me and runs over.
     speaker: 
     video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
+  - message: '"Is something wrong? You''re looking pale."'
+    speaker: Mayuri
+    video: {fileID: 32900000, guid: bc43a1c29ed07fc40ba644e2cd74efc4, type: 3}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
+  - message: '"Someone got stabbed."'
+    speaker: Rintaro
+    video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
+  - message: '"On the 8th floor."'
+    speaker: Rintaro
+    video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
+  - message: I don't know what to thing about this.
+    speaker: 
+    video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
+  - message: I had to do something.
+    speaker: 
+    video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
+  - message: I can hear the sirens coming closer with each secon
+    speaker: 
+    video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
+  - message: I had to contact someone.
+    speaker: 
+    video: {fileID: 32900000, guid: 8a1f2f404c763ce46a9cd36b2d04fbc6, type: 3}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
+  - message: I take my phone out of my pocket and start typing a quick message to
+      Daru.
+    speaker: 
+    video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
+  - message: 
+    speaker: 
+    video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0

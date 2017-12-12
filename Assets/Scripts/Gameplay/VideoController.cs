@@ -15,13 +15,17 @@ public class VideoController : MonoBehaviour {
 		else if(Current != this)
 		Destroy(gameObject);
 		player = VideoTarget.gameObject.AddComponent<VideoPlayer>();
+		player.audioOutputMode = VideoAudioOutputMode.AudioSource;
 		player.renderMode = VideoRenderMode.CameraNearPlane;
 	}
 
 	public void SetAction(ADVAction action)
 	{
 		player.clip = action.video;
-		player.audioOutputMode = VideoAudioOutputMode.AudioSource;
 		player.Play();
+	}
+
+	public void Pause() {
+		player.Pause();
 	}
 }
