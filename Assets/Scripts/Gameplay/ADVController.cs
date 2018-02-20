@@ -77,6 +77,9 @@ public class ADVController : MonoBehaviour {
 			VideoController.Current.SetAction(action);
 		if(action.isPhoneUsed)
 			PhoneTriggerCheck();
+
+		if(action.showNotification && action.notificationMessage != "")
+			PopupManager.Current.ShowNotification(action.notificationMessage, action.notificationPrice);
 		return true;
 	}
 
@@ -87,6 +90,7 @@ public class ADVController : MonoBehaviour {
 		VideoController.Current.Pause();
 		PopupManager.Current.ShowPurchasePopup("Unlock Phone?", "You need to unlock your phone to continue. Proceed?", 10, () => {
 			GameManager.Current.UnlockPhone(true);
+			VideoController.Current.Resume();
 		});
 	}
 

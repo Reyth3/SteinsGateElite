@@ -28,4 +28,8 @@ public class VideoController : MonoBehaviour {
 	public void Pause() {
 		player.Pause();
 	}
+
+	public void Resume() {
+		player.Play();
+	}
 }

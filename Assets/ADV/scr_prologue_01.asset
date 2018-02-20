@@ -20,6 +20,10 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 1
+    notificationMessage: Visit the in-game store to unlock 480p video and 128kbps
+      audio playback
+    notificationPrice: 10
   - message: My chest is pounding and I have trouble catching my breath.
     speaker: 
     video: {fileID: 0}
@@ -28,6 +32,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
   - message: Mayuri quickly runs after me.
     speaker: 
     video: {fileID: 32900000, guid: 7473c2967c2cd4a419ab7577a218d921, type: 3}
@@ -36,6 +43,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 1
+    notificationMessage: Do you want to unlock gapless video playback?
+    notificationPrice: 2
   - message: '"Okarin!"'
     speaker: Mayuri
     video: {fileID: 0}
@@ -44,6 +54,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
   - message: Mayuri notices me and runs over.
     speaker: 
     video: {fileID: 0}
@@ -52,6 +65,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
   - message: '"Is something wrong? You''re looking pale."'
     speaker: Mayuri
     video: {fileID: 32900000, guid: bc43a1c29ed07fc40ba644e2cd74efc4, type: 3}
@@ -60,6 +76,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
   - message: '"Someone got stabbed."'
     speaker: Rintaro
     video: {fileID: 0}
@@ -68,6 +87,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
   - message: '"On the 8th floor."'
     speaker: Rintaro
     video: {fileID: 0}
@@ -76,6 +98,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
   - message: I don't know what to thing about this.
     speaker: 
     video: {fileID: 0}
@@ -84,6 +109,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
   - message: I had to do something.
     speaker: 
     video: {fileID: 0}
@@ -92,6 +120,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
   - message: I can hear the sirens coming closer with each secon
     speaker: 
     video: {fileID: 0}
@@ -100,6 +131,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
   - message: I had to contact someone.
     speaker: 
     video: {fileID: 32900000, guid: 8a1f2f404c763ce46a9cd36b2d04fbc6, type: 3}
@@ -108,8 +142,32 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
-  - message: I take my phone out of my pocket and start typing a quick message to
-      Daru.
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
+  - message: I take my phone out of my pocket and start typing a message to Daru.
+    speaker: 
+    video: {fileID: 0}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 1
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
+  - message: I'm not sure how to word the message.
+    speaker: 
+    video: {fileID: 32900000, guid: cead46bbfffb55a4c937b980c088c319, type: 3}
+    changePhoneDate: 0
+    phoneDate: 
+    isWorldLineShift: 0
+    isCrossAttractorFieldShift: 0
+    isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
+  - message: '"Someone stabbed Makise Kurisu"'
     speaker: 
     video: {fileID: 0}
     changePhoneDate: 0
@@ -117,6 +175,9 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0
   - message: 
     speaker: 
     video: {fileID: 0}
@@ -125,3 +186,6 @@ MonoBehaviour:
     isWorldLineShift: 0
     isCrossAttractorFieldShift: 0
     isPhoneUsed: 0
+    showNotification: 0
+    notificationMessage: 
+    notificationPrice: 0

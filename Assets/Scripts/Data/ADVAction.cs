@@ -17,4 +17,8 @@ public class ADVAction : System.Object {
 	public bool isWorldLineShift;
 	public bool isCrossAttractorFieldShift;
 	public bool isPhoneUsed;
+	[Header("Notification")]
+	public bool showNotification;
+	public string notificationMessage;
+	public int notificationPrice;
 }
